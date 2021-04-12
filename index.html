@@ -5,28 +5,55 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/style.css">
         <title>Bootstrap Freelancer</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="text-uppercase">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-4">
-                            <div class="logo-container"></div>
+                        <div class="col-xs-8 col-sm-5">
+                            <div class="logo-container">
+                                <strong><a href="#">start bootstrap</a></strong>
+                            </div>
                         </div>
-                        <div class="col-xs-2 col-xs-offset-6 col-sm-4 col-sm-offset-4">
-                            <div class="menu-container"></div>
+                        <div class="col-xs-2 col-xs-offset-2 col-sm-6 col-sm-offset-1">
+                            <div class="menu-container text-right">
+                                <div class="hamburger-icon visible-xs">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <ul class="hidden-xs">
+                                    <li><strong><a href="#portfolio">portfolio</a></strong></li>
+                                    <li><strong><a href="#about">about</a></strong></li>
+                                    <li><strong><a href="#contact">contact</a></strong></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div class="jbt">
+            <div class="jbt text-uppercase text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="jbt-container"></div>
+                            <div class="jbt-container">
+                                <img src="img/avatar.svg" alt="avatar logo">
+                                <h1>start bootstrap</h1>
+                                <div class="star-dec">
+                                    <div class="line">
+                                        <hr>
+                                    </div>
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="line">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <p>graphic artist &#x2012; web designer &#x2012; illustrator</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -34,7 +61,7 @@
         </header>
 
         <main>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="portfolio-title-container">
                     <div class="container">
                         <div class="row">
@@ -69,7 +96,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about-title-container">
                     <div class="container">
                         <div class="row">
@@ -101,7 +128,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="contact-title-container">
                     <div class="container">
                         <div class="row">

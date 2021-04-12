@@ -1,15 +1,15 @@
+/* common */
+body {
+    color: white;
+}
+
+li {
+    margin: 0 10px;
+    list-style: none;
+    display: inline-block;
+}
+
 /* debug */
-.logo-container,
-.menu-container {
-    height: 33.33px;
-    background-color: red;
-}
-
-.jbt-container {
-    height: 400px;
-    background-color: red;
-}
-
 .portfolio-title {
     height: 100px;
     background-color: red;
@@ -55,13 +55,74 @@
 /* /debug */
 
 nav {
-    padding: 33.33px 0;
+    padding: 30px 0;
     background-color: #2c3e50;
+}
+
+.logo-container a {
+    font-size: 25px;
+    color: white;
+}
+
+.logo-container a:hover {
+    text-decoration: none;
+}
+
+.menu-container {
+    padding-top: 5px;
+}
+
+.menu-container a {
+    color: white;
+}
+
+.menu-container a:hover {
+    text-decoration: none;
+}
+
+.hamburger-icon > i {
+    padding: 5px 10px;
+    color: #888888;
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
 .jbt {
     padding: 25px 0;
     background-color: #1abc9c;
+}
+
+.jbt-container > img {
+    width: 20%;
+}
+
+.star-dec {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.star-dec > * {
+    float: left;
+    width: 33.33%;
+}
+.star-dec::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.star-dec hr {
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+.star-dec i {
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.jbt-container > p {
+    font-size: 20px;
 }
 
 main {
